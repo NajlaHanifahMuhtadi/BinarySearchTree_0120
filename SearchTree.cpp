@@ -140,5 +140,10 @@ int main()
         cout << "4. Perform Postorder traversal" << endl;
         cout << "5. Exit" << endl;
         cout << "Enter your choice: (1-5): ";
+
+        char ch;
+        cin >> ch;
+
+        cout << endl;
     }
 }
