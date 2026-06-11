@@ -8,4 +8,12 @@ public:
     string info;
     Node *leftChild;
     Node *rightChild;
+    
+    //constructor untuk node class
+    Node(string i, Node *l, Node *r)
+    {
+        info = i;
+        leftChild = l;
+        rightChild = r;
+    }
 };
