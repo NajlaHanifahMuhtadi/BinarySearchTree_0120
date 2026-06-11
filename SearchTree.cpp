@@ -39,5 +39,16 @@ public:
 
         Node *parent = NULL;
         Node *currentNode = NULL;
+
+        search(element, parent, currentNode);
+
+        if (element < parent -> info)
+        {
+            parent -> leftChild = newNode;
+        }
+        else if (element > parent -> info)
+        {
+            parent -> rightChild = newNode;
+        }
     }
 };
