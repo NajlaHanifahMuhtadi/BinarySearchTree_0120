@@ -31,6 +31,13 @@ public:
     //insert a node in the binary search tree
     void insert(string element)
     {
+        Node *newNode = new Node(element, NULL, NULL);
         
+        newNode -> info = element;
+        newNode -> leftChild = NULL;
+        newNode -> rightChild = NULL;
+
+        Node *parent = NULL;
+        Node *currentNode = NULL;
     }
 };
