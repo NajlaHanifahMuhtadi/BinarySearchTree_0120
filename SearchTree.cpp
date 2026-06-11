@@ -58,5 +58,15 @@ public:
     {
         currentNode = ROOT;
         parent = NULL;
+
+        while (currentNode != NULL && currentNode -> info != element)
+        {
+            parent = currentNode;
+
+            if (element < currentNode -> info)
+                currentNode = currentNode -> leftChild;
+            else
+                currentNode = currentNode -> rightChild;
+        }
     }
 };
