@@ -42,6 +42,12 @@ public:
 
         search(element, parent, currentNode);
 
+        if (parent == NULL)
+        {
+            ROOT = newNode;
+            return;
+        }
+
         if (element < parent -> info)
         {
             parent -> leftChild = newNode;
@@ -58,6 +64,8 @@ public:
     {
         currentNode = ROOT;
         parent = NULL;
+
+
 
         while (currentNode != NULL && currentNode -> info != element)
         {
